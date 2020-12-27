@@ -44,7 +44,7 @@ class _LoginPageState extends State<LoginPage> {
       splashColor: Colors.transparent,
       onPressed: () {
         if (_formKey.currentState.validate()) {
-          EasyLoading.show(status: 'Logging in...');
+          EasyLoading.show(status: 'Logging in..');
           Login login = Login(
               email: _emailController.text, password: _passwordController.text);
           LoginController.login(login, context);
